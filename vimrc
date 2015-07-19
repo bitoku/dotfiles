@@ -136,6 +136,8 @@ set confirm
 
 set helplang=ja
 "
+set nobackup
+"
 nnoremap j gj
 nnoremap k gk
 vnoremap j gj
