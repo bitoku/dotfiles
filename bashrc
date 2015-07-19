@@ -1,1 +1,4 @@
-PS1="\e[33m\][\t \w]$(if git status &>/dev/null;then echo git[branch:$(git branch | cut -d" "  -f2-) change:$(git status -s |wc -l)];fi)\[\e[0m\]\$ "
+source /usr/local/git/contrib/completion/git-prompt.sh
+source /usr/local/git/contrib/completion/git-completion.bash
+GIT_PS1_SHOWDIRTYSTATE=true
+export PS1="\[\033[1;33m\][\t \w]\[\033[00m\]\[\033[1;36m\]$(__git_ps1)\[\033[00m\]\\$ "
